@@ -99,8 +99,8 @@ public:
             children.push_back(std::make_pair(child.first, child.second));
         }
 
-
-        std::sort(children.begin(), children.end(), [](KVType a, KVType b)
+        
+        std::stable_sort(children.begin(), children.end(), [](KVType a, KVType b)
         {
             uint32_t v1 = 0;
             uint32_t v2 = 0;
